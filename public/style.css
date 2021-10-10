@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  width: 100vw;
+  /* overflow-x: hidden; */
+}
+
+header {
+  width: 100%;
+  position: relative;
+  top: 0;
+  /* display: flex; */
+  padding: 0 1rem;
+  border-bottom: 1px solid #444;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+header a {
+  color: #222;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  font-size: 2rem;
+  transition: 0.2s;
+}
+header nav a:hover {
+  color: #777;
+}
+header a#logo {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: none;
+}
+
+header nav div.button a {
+  background-color: teal;
+  color: #fff;
+}
+
+/* home */
+.home,
+.about {
+  padding: 2rem 2.5rem;
+}
+/* about */
+.about p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+/* .login */
+.login {
+  display: grid;
+  place-items: center;
+}
+
+.input_field {
+  padding: 7px 0;
+}
+
+form {
+  border: 1px solid #ccc;
+  padding: 1.2rem 1.4rem;
+  border-radius: 7px;
+  box-shadow: 0 0 24px rgb(201, 199, 199);
+  margin-top: 5rem;
+}
+form label {
+  color: #555;
+  font-size: 1.1rem;
+  font-family: arial;
+  display: block;
+  margin: 10px 0;
+}
+form input {
+  padding: 7px 10px;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  background-color: #eee;
+}
+form button {
+  width: 100%;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  padding: 0.4rem 0;
+  margin-top: 10px;
+}
+form span.error {
+  color: tomato;
+  display: block;
+}
+form p {
+  margin-top: 14px;
+}
+
+/* footer */
+footer {
+  margin-top: auto;
+  border-top: 1px solid #333;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
